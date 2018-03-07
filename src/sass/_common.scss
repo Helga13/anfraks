@@ -703,6 +703,10 @@ main{
   min-height: 673px;
 }
 
+.col{
+  display: flex;
+}
+
 .col_narrow{
   width: 42.6%;
 }
@@ -713,11 +717,17 @@ main{
 
 .priests{
   text-align: right;
-  display: flex;
 }
 
 .priests_img{
   max-width: 318px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
   margin: auto 37px auto auto;
+}
+.container_inner_wide{
+  max-width: 747px;
+  padding-left: 14%;
+}
+.left_content{
+  margin: auto auto auto 0;
 }
