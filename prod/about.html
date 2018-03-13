@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/screen.css">
+
+</head>
+
+<body>
+<header class="header_inner">
+  <div class="header_overlay"></div>
+  <div class="wrap">
+    <div class="header_contact">
+      <a href="tel:+375445880988" class="phone">+375 (44) 588-09-88</a>
+      <a href="mailto:info@anfraks.by" class="mail" target="_blank">info@anfraks.by</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">О мастерской</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#" class="login">Войти</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <a href="/" class="header_logo">
+        <img src="img/logo.png" alt="Анфракс">
+        <span>Анфракс</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="heading">
+    <img src="img/main_slider/jewelry-3139627_1920.jpg" alt="anfraks">
+    <div class="wrap">
+      <a href="#" class="backspace"></a>
+      <div class="heading_inner">
+        <h1>О нас</h1>
+        <div class="separator"></div>
+        <p class="description">Собственная производственная база и специалисты высокого уровня обеспечивают создание уникальных образцов и авторских работ.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section_flex section_about">
+    <div class="col col_wide light_bg slider_container">
+      <div class="slider_about js-slider">
+        <div class="about_item"><img src="img/slider_about/1_75.jpg" alt="О нас"></div>
+        <div class="about_item"><img src="img/slider_about/1_75.jpg" alt="О нас"></div>
+        <div class="about_item"><img src="img/slider_about/1_75.jpg" alt="О нас"></div>
+        <div class="about_item"><img src="img/slider_about/1_75.jpg" alt="О нас"></div>
+        <div class="about_item"><img src="img/slider_about/1_75.jpg" alt="О нас"></div>
+      </div>
+    </div>
+    <div class="col col_narrow dark_bg">
+      <div class="container_inner_narrow left_content">
+        <div class="subtitle">История основания</div>
+        <p>Основным направлением ювелирная мастерская выбрала изготовление предметов церковного обихода: евхаристические наборы, потиры, напрестольные и наперстные кресты, панагии, кадила и лампады, архиерейские жезлы, гребни, посохи, оклады для икон, мощевики и ковчеги.</p>
+        <p>Особое внимание уделяется реставрационным работам церковной утвари. Изготовленные эксклюзивные изделия по собственным чертежам, либо эскизам заказчика, могут стать бесценным подарком и украшением любой коллекции.</p>
+      </div>
+    </div>
+  </section>
+  <div class="empty"></div>
+</main>
+<footer>
+  <div class="footer_top">
+    <div class="wrap">
+      <a href="/" class="footer_logo">
+        <img src="img/logo-footer.png" alt="Анфракс">
+        <span>Анфракс</span>
+      </a>
+      <div class="subscription_form">
+        <span class="caption">Узнавайте о новых работах первыми</span>
+        <div class="input"><input type="email" placeholder="Почта"></div>
+        <button type="submit" class="btn"><span class="btn_inner">Подисаться на новости</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div class="wrap">
+      <span class="copyright">&copy;&nbsp;ООО “Анфракс”, 2004-2017</span>
+      <a href="https://skyweb.by" class="skyweb">Сайт разработан <span>skyweb.by</span></a>
+    </div>
+  </div>
+</footer>
+<!--popup-->
+<div class="overlay popup" id="popup_order">
+  <div class="popup_content window_block after">
+    <div class="window_inner before">
+      <form action="/" method="post">
+        <div class="subtitle">Узнайте все, что вас интересует</div>
+        <div class="field_block">
+          <div class="field">
+            <label for="p_name">Имя</label>
+            <div class="input">
+              <input type="text" placeholder="Имя" id="p_name" required>
+            </div>
+          </div>
+          <div class="field tabs_block">
+            <div class="tabs_caption">
+              <label for="p_phone" class="tab active">Телефон</label>
+              <label for="p_mail" class="tab">Почта</label>
+            </div>
+            <div class="tabs_content active">
+              <div class="input">
+                <input id="p_phone" name="phone" type="text" placeholder="+375 (_) __ __ __">
+              </div>
+            </div>
+            <div class="tabs_content">
+              <div class="input">
+                <input id="p_mail" name="mail" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="p_message">Сообщение</label>
+          <div class="input">
+            <textarea name="" id="p_message"></textarea>
+          </div>
+        </div> <a href="#" class="link">Вернуться к просмотру</a>
+        <button type="submit" class="btn garnet btn_submit"><span class="btn_inner">Отправить</span></button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+</body>
+</html>

@@ -10,6 +10,50 @@
   At the bottom of this section, we provide information about the spritesheet itself
   $spritesheet: width height image $spritesheet-sprites
   */
+$arr_next-hover-name: 'arr_next-hover'
+$arr_next-hover-x: 16px
+$arr_next-hover-y: 16px
+$arr_next-hover-offset-x: -16px
+$arr_next-hover-offset-y: -16px
+$arr_next-hover-width: 16px
+$arr_next-hover-height: 12px
+$arr_next-hover-total-width: 50px
+$arr_next-hover-total-height: 28px
+$arr_next-hover-image: 'sprite.png'
+$arr_next-hover: 16px 16px -16px -16px 16px 12px 50px 28px 'sprite.png' 'arr_next-hover'
+$arr_next-name: 'arr_next'
+$arr_next-x: 34px
+$arr_next-y: 0px
+$arr_next-offset-x: -34px
+$arr_next-offset-y: 0px
+$arr_next-width: 16px
+$arr_next-height: 12px
+$arr_next-total-width: 50px
+$arr_next-total-height: 28px
+$arr_next-image: 'sprite.png'
+$arr_next: 34px 0px -34px 0px 16px 12px 50px 28px 'sprite.png' 'arr_next'
+$arrow_more-light-name: 'arrow_more-light'
+$arrow_more-light-x: 18px
+$arrow_more-light-y: 0px
+$arrow_more-light-offset-x: -18px
+$arrow_more-light-offset-y: 0px
+$arrow_more-light-width: 16px
+$arrow_more-light-height: 12px
+$arrow_more-light-total-width: 50px
+$arrow_more-light-total-height: 28px
+$arrow_more-light-image: 'sprite.png'
+$arrow_more-light: 18px 0px -18px 0px 16px 12px 50px 28px 'sprite.png' 'arrow_more-light'
+$arrow_more-name: 'arrow_more'
+$arrow_more-x: 0px
+$arrow_more-y: 16px
+$arrow_more-offset-x: 0px
+$arrow_more-offset-y: -16px
+$arrow_more-width: 16px
+$arrow_more-height: 12px
+$arrow_more-total-width: 50px
+$arrow_more-total-height: 28px
+$arrow_more-image: 'sprite.png'
+$arrow_more: 0px 16px 0px -16px 16px 12px 50px 28px 'sprite.png' 'arrow_more'
 $dot-active-name: 'dot-active'
 $dot-active-x: 0px
 $dot-active-y: 0px
@@ -17,26 +61,26 @@ $dot-active-offset-x: 0px
 $dot-active-offset-y: 0px
 $dot-active-width: 18px
 $dot-active-height: 16px
-$dot-active-total-width: 29px
-$dot-active-total-height: 16px
+$dot-active-total-width: 50px
+$dot-active-total-height: 28px
 $dot-active-image: 'sprite.png'
-$dot-active: 0px 0px 0px 0px 18px 16px 29px 16px 'sprite.png' 'dot-active'
+$dot-active: 0px 0px 0px 0px 18px 16px 50px 28px 'sprite.png' 'dot-active'
 $dot-name: 'dot'
-$dot-x: 18px
-$dot-y: 0px
-$dot-offset-x: -18px
-$dot-offset-y: 0px
+$dot-x: 34px
+$dot-y: 12px
+$dot-offset-x: -34px
+$dot-offset-y: -12px
 $dot-width: 11px
 $dot-height: 9px
-$dot-total-width: 29px
-$dot-total-height: 16px
+$dot-total-width: 50px
+$dot-total-height: 28px
 $dot-image: 'sprite.png'
-$dot: 18px 0px -18px 0px 11px 9px 29px 16px 'sprite.png' 'dot'
-$spritesheet-width: 29px
-$spritesheet-height: 16px
+$dot: 34px 12px -34px -12px 11px 9px 50px 28px 'sprite.png' 'dot'
+$spritesheet-width: 50px
+$spritesheet-height: 28px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $dot-active $dot
-$spritesheet: 29px 16px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $arr_next-hover $arr_next $arrow_more-light $arrow_more $dot-active $dot
+$spritesheet: 50px 28px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables

@@ -19,3 +19,44 @@
     </div>
   </div>
 </footer>
+<!--popup-->
+<div class="overlay popup" id="popup_order">
+  <div class="popup_content window_block after">
+    <div class="window_inner before">
+      <form action="/" method="post">
+        <div class="subtitle">Узнайте все, что вас интересует</div>
+        <div class="field_block">
+          <div class="field">
+            <label for="p_name">Имя</label>
+            <div class="input">
+              <input type="text" placeholder="Имя" id="p_name" required>
+            </div>
+          </div>
+          <div class="field tabs_block">
+            <div class="tabs_caption">
+              <label for="p_phone" class="tab active">Телефон</label>
+              <label for="p_mail" class="tab">Почта</label>
+            </div>
+            <div class="tabs_content active">
+              <div class="input">
+                <input id="p_phone" name="phone" type="text" placeholder="+375 (_) __ __ __">
+              </div>
+            </div>
+            <div class="tabs_content">
+              <div class="input">
+                <input id="p_mail" name="mail" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="p_message">Сообщение</label>
+          <div class="input">
+            <textarea name="" id="p_message"></textarea>
+          </div>
+        </div> <a href="#" class="link">Вернуться к просмотру</a>
+        <button type="submit" class="btn garnet btn_submit"><span class="btn_inner">Отправить</span></button>
+      </form>
+    </div>
+  </div>
+</div>
