@@ -627,6 +627,12 @@ nav{
   }
 }
 
+#popup_login{
+  .popup_content{
+    max-width: 348px;
+  }
+}
+
 // main
 
 .logo_container{
@@ -1242,5 +1248,13 @@ form,
   &:focus,
   &:active{
     box-shadow: 0px 0px 20px 0px rgba(255, 255, 250, 0.6);
+  }
+}
+
+.btn_login{
+  .btn_inner{
+    padding-right: 32px;
+    background: url('../img/icons/login-square-arrow-button-outline.svg') right center no-repeat;
+    background-size: 16px;
   }
 }

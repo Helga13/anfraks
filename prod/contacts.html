@@ -24,7 +24,7 @@
         <li><a href="#">Каталог</a></li>
         <li><a href="#">О мастерской</a></li>
         <li><a href="#">Контакты</a></li>
-        <li><a href="#" class="login">Войти</a></li>
+        <li><a href="#" class="login js-popup" data-id="popup_login">Войти</a></li>
       </ul>
     </nav>
     <div class="logo">
@@ -149,6 +149,29 @@
           </div>
         </div> <a href="#" class="link">Вернуться к просмотру</a>
         <button type="submit" class="btn garnet btn_submit"><span class="btn_inner">Отправить</span></button>
+      </form>
+    </div>
+  </div>
+</div>
+<!---------->
+<div class="overlay popup" id="popup_login">
+  <div class="popup_content window_block after">
+    <div class="window_inner before">
+      <form action="/" method="post">
+        <div class="field">
+          <label for="p_login">Логин</label>
+          <div class="input">
+            <input type="text" placeholder="login" id="p_login" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="p_pass">Пароль</label>
+          <div class="input">
+            <input type="password" placeholder="" id="p_pass" required>
+          </div>
+        </div>
+        <a href="#" class="link">Отмена</a>
+        <button type="submit" class="btn garnet btn_login"><span class="btn_inner">Войти</span></button>
       </form>
     </div>
   </div>
