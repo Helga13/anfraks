@@ -268,7 +268,6 @@ header{
   right: 0;
   z-index: 1;
   padding: 56px 0 60px;
-  color: #fff;
   letter-spacing: 0.05em;
   z-index: 2;
 }
@@ -323,6 +322,7 @@ header{
   margin-right: 26px;
   padding: 4px 0 4px 26px;
   display: inline-block;
+  color: #fff;
 }
 
 .phone{
@@ -349,6 +349,11 @@ header{
   }
 }
 
+.media_contacts{
+  display: none;
+  visibility: hidden;
+}
+
 nav{
   float: right;
   font-size: 0;
@@ -369,6 +374,15 @@ nav{
       color: $goldLight;
     }
   }
+}
+
+.menu_block{
+  display: inline-block;
+}
+
+.login_block{
+  display: inline-block;
+  margin-left: 24px;
 }
 
 .login{
@@ -492,7 +506,7 @@ nav{
 
 .slick-dots{
   bottom: 9.98vh;
-  z-index: 1;
+//  z-index: 1;
   li{
     margin: 0 10px;
     button{
@@ -644,6 +658,11 @@ nav{
 
 .main_logo{
   display: inline-block; 
+  width: 157px;
+  transition: width .1s ease-in-out;
+  .logo{
+    width: 100%;
+  }
   &.sticky{
     position: fixed;
     top: 14px;
@@ -653,7 +672,6 @@ nav{
 }
 
 .slider_block{
-  min-height: 100vh;
   position: relative;
 }
 
@@ -664,7 +682,7 @@ nav{
 .slider_item{
   position: relative;
   height: 100vh;
-  min-height: 520px;
+  min-height: 540px;
   overflow: hidden;
   &:after{
     content: '';
@@ -698,9 +716,6 @@ nav{
   text-align: center;
   .wrap{
     margin: auto;
-  }
-  .logo{
-    width: 157px;
   }
   .text{
     font-family: 'PoiretOneRegular', $font-stack-helvetica;
@@ -813,31 +828,33 @@ nav{
 }
 .container_inner_wide{
   width: 100%;
-  max-width: 747px;
+  max-width: 765px; //747+18
   padding-left: 13.88%;
   padding-top: 15px;
   padding-bottom: 15px;
   &.right_content{
     padding-right: 13.88%;
-    padding-left: 0;
+    padding-left: 18px;
   }
 }
 .container_inner_narrow{
   width: 100%;
-  max-width: 458px;
+  max-width: 476px; //458+18
   padding-left: 4.77%;
   padding-top: 15px;
   padding-bottom: 15px;
   &.right_content{
     padding-right: 4.77%;
-    padding-left: 0;
+    padding-left: 18px;
   }
 }
 .left_content{
   margin: auto auto auto 0;
+  padding-right: 18px;
 }
 .right_content{
   margin: auto 0 auto auto;
+  padding-left: 18px;
 }
 .btn_catalog{
   margin-top: 10px;
@@ -866,7 +883,7 @@ nav{
 .slider_reliquary{
   margin-left: -22%;
   margin-right: -34%;
-  padding-top: 6.7%;
+  margin-top: 6.7%;
   .slick-dots{
     bottom: 34px;
   }
@@ -1081,7 +1098,7 @@ form,
 .slider_about{
   margin-left: -25.4%;
   margin-right: -44%;
-  padding-top: 88px;
+  margin-top: 88px;
   .slick-dots{
     bottom: -68px;
   }
@@ -1135,24 +1152,24 @@ form,
 }
 .address{
   background: url(../img/icons/signs.svg) left center no-repeat;
-  background-size: 16px;
+  background-size: 16px 20px;
   transition: background .3s ease-in-out;
   &:hover,
   &:focus,
   &:active{
     background: url(../img/icons/signs-hover.svg) left center no-repeat;
-    background-size: 16px;
+    background-size: 16px 20px;
   }
 }
 .office_hours{
   background: url(../img/icons/clock.svg) left center no-repeat;
-  background-size: 16px;
+  background-size: 16px 18px;
   transition: background .3s ease-in-out;
   &:hover,
   &:focus,
   &:active{
     background: url(../img/icons/clock-hover.svg) left center no-repeat;
-    background-size: 16px;
+    background-size: 16px 18px;
   }
 }
 .section_product{
@@ -1186,6 +1203,11 @@ form,
   min-height: 625px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 60px;
+}
+.catalog_item{
+  img{
+    max-width: 100%;
+  }
 }
 .goods_block{
   display: flex;
@@ -1253,7 +1275,7 @@ form,
 
 .btn_login{
   .btn_inner{
-    padding-right: 32px;
+    padding-right: 33px;
     background: url('../img/icons/login-square-arrow-button-outline.svg') right center no-repeat;
     background-size: 16px;
   }
