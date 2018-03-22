@@ -29,12 +29,6 @@
       width: auto;
     }
   }
-
-  
-}
-
-@media only screen and (max-width : 1236px) {
-  
   
 }
 
@@ -264,6 +258,9 @@
   .heading_inner{
     margin-top: 68px;
   }
+  .section_catalog{
+    min-height: auto;
+  }
   .title, h1,
   .subtitle, h2{
     padding-bottom: 24px;
@@ -337,7 +334,6 @@
     bottom: 15px;
   }
   
-
 }
 
 @media only screen and (max-width : 480px) {

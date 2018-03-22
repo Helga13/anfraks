@@ -506,7 +506,6 @@ nav{
 
 .slick-dots{
   bottom: 9.98vh;
-//  z-index: 1;
   li{
     margin: 0 10px;
     button{
@@ -894,6 +893,8 @@ nav{
   transition: transform .3s ease-in-out, opacity .3s ease-in-out;
   img{
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
     filter: blur(7px);
     transition: filter .3s ease-in-out;
   }
