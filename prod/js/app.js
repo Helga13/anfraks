@@ -43,29 +43,48 @@ $(document).ready(function () {
     autoplaySpeed: 4000    
   });
   
-  $('.js-slider').slick({
-    arrows: true,
-    dots: true,
-    infinite: true,
-    centerMode: true,
-    autoplay: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-    {
-      breakpoint: 1401,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 993,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
-  });
+  var numSlides = $('.js-slider .reliquary_item').length;
+  var numSlidesAbout = $('.js-slider .about_item').length;
+console.log(numSlides);
+console.log(numSlidesAbout);
+  if(numSlides > 1 || numSlidesAbout > 1){
+    $('.js-slider').slick({
+      arrows: true,
+      dots: true,
+      infinite: true,
+      centerMode: true,
+//      autoplay: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+//      responsive: [
+//        {
+//          breakpoint: 1401,
+//          settings: {
+//            slidesToShow: 1,
+//          }
+//        },
+//        {
+//          breakpoint: 993,
+//          settings: {
+//            slidesToShow: 1
+//          }
+//        }
+//      ]
+    });
+  }else{
+    $('.js-slider .reliquary_item').addClass('slick-visible');
+    $('.js-slider .about_item').addClass('slick-visible');
+    $('.js-slider').slick({
+      arrows: true,
+      dots: true,
+      infinite: true,
+//      centerMode: true,
+      autoplay: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+  }
+  
   
   // tabs
   $('.tabs_block').each(function () {
